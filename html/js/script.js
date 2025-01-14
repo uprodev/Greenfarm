@@ -62,7 +62,7 @@ jQuery(document).ready(function ($) {
   //show/hide
   $(document).on('click', '.btn-show', function (e){
     e.preventDefault();
-    $('.locations').toggleClass('is-open')
+    $('.locations').toggleClass('is-open');
   });
 
   //slider

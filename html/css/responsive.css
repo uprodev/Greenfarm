@@ -236,7 +236,20 @@
             order: 2; }
 
   .bg-text-revers .content {
-    left: 0; } }
+    left: 0; }
+
+  .gallery .item {
+    width: 285px;
+    height: 285px; }
+
+  .careers-banner figure img {
+    height: 400px; }
+
+  .locations-after .content {
+    max-height: 900px; }
+
+  .locations-after.is-open .content {
+    max-height: 3000px; } }
 @media (max-width: 991px) {
   .content-width {
     width: 720px; }
@@ -287,7 +300,26 @@
 
   .img-text .right {
     width: 100%;
-    padding: 0; } }
+    padding: 0; }
+
+  .img-text-number .left p, .img-text-number .number {
+    text-align: left; }
+
+  .gallery .content {
+    grid-gap: 15px; }
+
+  .gallery .item {
+    width: 230px;
+    height: 230px; }
+
+  .gallery h2 {
+    margin: 0 0 30px; }
+
+  .img-text-number .left {
+    padding: 0; }
+
+  .careers-banner figure img {
+    height: 300px; } }
 @media (max-width: 767px) {
   .content-width {
     width: 540px; }
@@ -317,7 +349,10 @@
     margin-top: 15px; }
 
   .locations-slider-block .nav-wrap {
-    display: none; } }
+    display: none; }
+
+  .careers-banner figure img {
+    height: 250px; } }
 @media (max-width: 575px) {
   .content-width, .join .content-width, .text-img .content-width, footer .content-width, .inst-block .content-width, .img-text .content-width {
     width: 100%;
@@ -544,6 +579,33 @@
     line-height: 20px; }
 
   .bg-text-full .content {
-    padding: 20px; } }
+    padding: 20px; }
+
+  .img-text-number .number {
+    font-size: 70px;
+    line-height: 1.1; }
+
+  .gallery .item {
+    width: 160px;
+    height: 160px; }
+
+  .careers-banner figure img {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content; }
+
+  .careers-banner h1 {
+    font-size: 40px;
+    line-height: 0.9; }
+
+  .text-img-only h2 {
+    font-size: 36px;
+    line-height: 0.9; }
+
+  .locations-after .content {
+    max-height: 1200px; }
+
+  .locations-after.is-open .content {
+    max-height: 4000px; } }
 
 /*# sourceMappingURL=responsive.css.map */
