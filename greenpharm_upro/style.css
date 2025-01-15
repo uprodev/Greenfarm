@@ -1,0 +1,52 @@
+/*   
+Theme Name: GreenPharm
+*/
+
+figure img{
+	height: auto;
+}
+
+.footer-form input{
+	width: 100%;
+}
+.footer-form .wpcf7-form-control-wrap{
+	width: calc(100% - 40px);
+}
+
+.top-line .nice-select .option{
+	position: relative;
+}
+
+.top-line .nice-select .option a:after{
+	position: absolute;
+	top: 0;
+	 left: 0;
+	width: 100%;
+	height: 100%;
+	content: "";
+}
+
+.footer-form{
+	position: relative;
+}
+
+.wpcf7 form .wpcf7-response-output{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	margin:20px 0 0;
+	
+}
+
+.footer-form .wpcf7-not-valid-tip{
+	font-size: 12px;
+}
+
+.footer-form button:hover{
+	background: #7eb772;
+}
+
+.wpcf7 form .wpcf7-response-output{
+	z-index: 10;
+}
