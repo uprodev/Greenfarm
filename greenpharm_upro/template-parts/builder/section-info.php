@@ -2,7 +2,7 @@
 if($args['row']):
 	foreach($args['row'] as $key=>$arg) $$key = $args['row']['is_options'] ? get_field($key . '_1', 'option') : $arg; ?>
 
-  <section class="join<?php if($is_grey) echo ' join-grey' ?>">
+  <section class="join<?php if($background_color != 'Default') echo ' join-' . strtolower($background_color) ?>">
 
     <?php if ($background_image): ?>
       <div class="bg">

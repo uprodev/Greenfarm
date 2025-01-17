@@ -6,7 +6,13 @@ if($args['row']):
 
     <section class="locations<?php if($args['index'] == 0) echo ' locations-banner'; if($type == 'Two columns') echo ' locations-2x'; if($type == 'Slider') echo ' locations-slider-block'; if($type == 'Two columns' && $is_more_button) echo ' locations-after'; ?>">
       <div class="bg">
-        <img src="<?= get_stylesheet_directory_uri() ?>/img/bg-2.png" alt="">
+
+        <?php if ($background_image): ?>
+          <?= wp_get_attachment_image($background_image['ID'], 'full') ?>
+        <?php else: ?>
+          <img src="<?= get_stylesheet_directory_uri() ?>/img/bg-2.png" alt="">
+        <?php endif ?>
+        
       </div>
       <div class="content-width">
 

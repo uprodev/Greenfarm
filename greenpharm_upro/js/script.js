@@ -149,4 +149,15 @@ jQuery(document).ready(function ($) {
     }
   });
 
+  //slider
+  var swiperSpecials = new Swiper(".specials-slider", {
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    breakpoints: {
+      767: {
+        spaceBetween: 80,
+      },
+    }
+  });
+
 });
