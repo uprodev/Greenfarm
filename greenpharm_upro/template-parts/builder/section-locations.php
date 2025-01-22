@@ -1,6 +1,6 @@
 <?php 
 if($args['row']):
-	foreach($args['row'] as $key=>$arg) $$key = $arg; ?>
+  foreach($args['row'] as $key=>$arg) $$key = $arg; ?>
 
   <?php if($locations): ?>
 
@@ -52,13 +52,9 @@ if($args['row']):
                     <?php endif ?>
 
                     <div class="item">
-
-                      <?php if (has_post_thumbnail()): ?>
                         <figure>
-                          <?php the_post_thumbnail('full') ?>
+                          <?= get_the_post_thumbnail(null, 'full')?: wp_get_attachment_image(415, 'full') ?>
                         </figure>
-                      <?php endif ?>
-
                       <div class="wrap">
                         <h6 class="city"><?php the_title() ?></h6>
                         <ul>
