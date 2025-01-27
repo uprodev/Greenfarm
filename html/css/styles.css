@@ -1977,4 +1977,84 @@ footer {
 
 .pb-130 {
   padding-bottom: 130px; }
+
+/**/
+.order-popup {
+  width: 660px;
+  overflow: visible;
+  padding: 30px;
+  background: transparent;
+  max-width: 95%; }
+  .order-popup .popup-main {
+    background: #49763f;
+    padding: 30px;
+    border-radius: 30px; }
+  .order-popup h6 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 3px; }
+  .order-popup h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    text-align: left; }
+  .order-popup .nice-select {
+    background: transparent;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 0;
+    width: 100%;
+    border: 1px solid #000;
+    float: none; }
+    .order-popup .nice-select:after {
+      border-bottom: 3px solid #fff;
+      border-right: 3px solid #fff;
+      width: 8px;
+      height: 8px;
+      margin-top: -7px; }
+  .order-popup .nice-select .option {
+    color: #0a140a; }
+  .order-popup .btn-wrap {
+    margin-top: 20px; }
+    .order-popup .btn-wrap button {
+      width: 100%;
+      border: none;
+      background: #fff; }
+  .order-popup .fancybox-button svg {
+    color: #fff;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease; }
+  .order-popup .fancybox-button {
+    border-radius: 100%;
+    background: #464946;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    top: 15px;
+    right: 15px;
+    opacity: 1 !important;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease; }
+    .order-popup .fancybox-button:hover svg {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg); }
+  .order-popup .nice-select .list {
+    width: 100%; }
+
+@media (max-width: 575px) {
+  .order-popup {
+    padding: 10px; }
+    .order-popup .fancybox-button {
+      top: 0;
+      right: 0; } }
+
 /*# sourceMappingURL=styles.css.map */

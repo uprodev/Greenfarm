@@ -20,14 +20,16 @@ jQuery(document).ready(function ($) {
   swiperBanner.on('slideChange', function () {
     let item = swiperBanner.activeIndex +1;
 
-    $('.home-banner .bg-video').hide();
-    $(".home-banner .bg-video:nth-child("+ item + ")").show();
-    $(".home-banner .bg-video:nth-child(" + item + ") video").get(0).play();
+    if(window.innerWidth >1199){
+      $('.home-banner .bg-video').hide();
+      $(".home-banner .bg-video:nth-child("+ item + ")").show();
+      $(".home-banner .bg-video:nth-child(" + item + ") video").get(0).play();
 
-    if(item==2){
-      $('.home-banner').addClass('is-dark');
-    }else{
-      $('.home-banner').removeClass('is-dark');
+      if(item==2){
+        $('.home-banner').addClass('is-dark');
+      }else{
+        $('.home-banner').removeClass('is-dark');
+      }
     }
   })
 
@@ -157,6 +159,13 @@ jQuery(document).ready(function ($) {
         spaceBetween: 80,
       },
     }
+  });
+
+
+
+  $(".fancybox").fancybox({
+    touch:false,
+    autoFocus:false,
   });
 
 });
